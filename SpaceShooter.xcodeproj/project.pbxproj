@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290F403FDB9A5FCE323B0235 /* Pods_SpaceShooter_SpaceShooterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B133A02ED4E2B3BD7A80B6 /* Pods_SpaceShooter_SpaceShooterUITests.framework */; };
+		8082B37EFE831819561F92A9 /* Pods_SpaceShooter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEDCC97D6CDEE8EB73FB8B5 /* Pods_SpaceShooter.framework */; };
+		88FCB1FFAB6421786E055718 /* Pods_SpaceShooterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CC4A6FA50042972EE1D187 /* Pods_SpaceShooterTests.framework */; };
+		E52829A024288FA600E9BB37 /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E528299F24288FA600E9BB37 /* TitleScene.sks */; };
+		E52829A224288FAE00E9BB37 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52829A124288FAE00E9BB37 /* TitleScene.swift */; };
+		E52829AA2428903C00E9BB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52829A82428903C00E9BB37 /* Assets.xcassets */; };
+		E52829AB2428903C00E9BB37 /* ParticleSpark.sks in Resources */ = {isa = PBXBuildFile; fileRef = E52829A92428903C00E9BB37 /* ParticleSpark.sks */; };
+		E5F39B1C24288E0B00646E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B1B24288E0B00646E86 /* AppDelegate.swift */; };
+		E5F39B1E24288E0B00646E86 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5F39B1D24288E0B00646E86 /* GameScene.sks */; };
+		E5F39B2024288E0B00646E86 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5F39B1F24288E0B00646E86 /* Actions.sks */; };
+		E5F39B2224288E0B00646E86 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B2124288E0B00646E86 /* GameScene.swift */; };
+		E5F39B2424288E0B00646E86 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B2324288E0B00646E86 /* GameViewController.swift */; };
+		E5F39B2724288E0B00646E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F39B2524288E0B00646E86 /* Main.storyboard */; };
+		E5F39B2924288E0E00646E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F39B2824288E0E00646E86 /* Assets.xcassets */; };
+		E5F39B2C24288E0E00646E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F39B2A24288E0E00646E86 /* LaunchScreen.storyboard */; };
+		E5F39B3724288E0E00646E86 /* SpaceShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B3624288E0E00646E86 /* SpaceShooterTests.swift */; };
+		E5F39B4224288E0E00646E86 /* SpaceShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B4124288E0E00646E86 /* SpaceShooterUITests.swift */; };
+		E5F39B5524288E8D00646E86 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B5424288E8D00646E86 /* PhysicsCategory.swift */; };
+		E5F39B5724288EA200646E86 /* UIColor.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B5624288EA200646E86 /* UIColor.extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5F39B3324288E0E00646E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5F39B1024288E0B00646E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5F39B1724288E0B00646E86;
+			remoteInfo = SpaceShooter;
+		};
+		E5F39B3E24288E0E00646E86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5F39B1024288E0B00646E86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5F39B1724288E0B00646E86;
+			remoteInfo = SpaceShooter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00281D56B4AC39903DE4413C /* Pods-SpaceShooterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooterTests.release.xcconfig"; path = "Target Support Files/Pods-SpaceShooterTests/Pods-SpaceShooterTests.release.xcconfig"; sourceTree = "<group>"; };
+		60B133A02ED4E2B3BD7A80B6 /* Pods_SpaceShooter_SpaceShooterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceShooter_SpaceShooterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61ADA1521576BBA011F934FA /* Pods-SpaceShooter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooter.release.xcconfig"; path = "Target Support Files/Pods-SpaceShooter/Pods-SpaceShooter.release.xcconfig"; sourceTree = "<group>"; };
+		A05B361A3A914B4E48A5E690 /* Pods-SpaceShooterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooterTests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceShooterTests/Pods-SpaceShooterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3CC4A6FA50042972EE1D187 /* Pods_SpaceShooterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceShooterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB2E264C00FAD2FB57913C7 /* Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig"; path = "Target Support Files/Pods-SpaceShooter-SpaceShooterUITests/Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D90601B064F73824BE7220D9 /* Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceShooter-SpaceShooterUITests/Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E528299F24288FA600E9BB37 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
+		E52829A124288FAE00E9BB37 /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		E52829A82428903C00E9BB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../spriteKit-for-dummies/spriteKit-for-dummies/Game/Effects/Explotion/Assets.xcassets"; sourceTree = "<group>"; };
+		E52829A92428903C00E9BB37 /* ParticleSpark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = ParticleSpark.sks; path = "../../../../../spriteKit-for-dummies/spriteKit-for-dummies/Game/Effects/Explotion/ParticleSpark.sks"; sourceTree = "<group>"; };
+		E5F39B1824288E0B00646E86 /* SpaceShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F39B1B24288E0B00646E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5F39B1D24288E0B00646E86 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E5F39B1F24288E0B00646E86 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		E5F39B2124288E0B00646E86 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E5F39B2324288E0B00646E86 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E5F39B2624288E0B00646E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5F39B2824288E0E00646E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5F39B2B24288E0E00646E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5F39B2D24288E0E00646E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F39B3224288E0E00646E86 /* SpaceShooterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceShooterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F39B3624288E0E00646E86 /* SpaceShooterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShooterTests.swift; sourceTree = "<group>"; };
+		E5F39B3824288E0E00646E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F39B3D24288E0E00646E86 /* SpaceShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceShooterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F39B4124288E0E00646E86 /* SpaceShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShooterUITests.swift; sourceTree = "<group>"; };
+		E5F39B4324288E0E00646E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F39B5424288E8D00646E86 /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		E5F39B5624288EA200646E86 /* UIColor.extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.extension.swift; sourceTree = "<group>"; };
+		E79EEF5D0B9247EEFB6FC6F9 /* Pods-SpaceShooter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooter.debug.xcconfig"; path = "Target Support Files/Pods-SpaceShooter/Pods-SpaceShooter.debug.xcconfig"; sourceTree = "<group>"; };
+		EAEDCC97D6CDEE8EB73FB8B5 /* Pods_SpaceShooter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceShooter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5F39B1524288E0B00646E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8082B37EFE831819561F92A9 /* Pods_SpaceShooter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F39B2F24288E0E00646E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FCB1FFAB6421786E055718 /* Pods_SpaceShooterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F39B3A24288E0E00646E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290F403FDB9A5FCE323B0235 /* Pods_SpaceShooter_SpaceShooterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82D0D51E34EF0B0278710898 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E79EEF5D0B9247EEFB6FC6F9 /* Pods-SpaceShooter.debug.xcconfig */,
+				61ADA1521576BBA011F934FA /* Pods-SpaceShooter.release.xcconfig */,
+				D90601B064F73824BE7220D9 /* Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig */,
+				BFB2E264C00FAD2FB57913C7 /* Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig */,
+				A05B361A3A914B4E48A5E690 /* Pods-SpaceShooterTests.debug.xcconfig */,
+				00281D56B4AC39903DE4413C /* Pods-SpaceShooterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8B1D9A91582B3339C7C3EEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDCC97D6CDEE8EB73FB8B5 /* Pods_SpaceShooter.framework */,
+				60B133A02ED4E2B3BD7A80B6 /* Pods_SpaceShooter_SpaceShooterUITests.framework */,
+				A3CC4A6FA50042972EE1D187 /* Pods_SpaceShooterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E528299D24288F8900E9BB37 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				E52829A324288FC400E9BB37 /* Explotion */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		E528299E24288F8D00E9BB37 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				E528299F24288FA600E9BB37 /* TitleScene.sks */,
+				E52829A124288FAE00E9BB37 /* TitleScene.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		E52829A324288FC400E9BB37 /* Explotion */ = {
+			isa = PBXGroup;
+			children = (
+				E52829A82428903C00E9BB37 /* Assets.xcassets */,
+				E52829A92428903C00E9BB37 /* ParticleSpark.sks */,
+			);
+			path = Explotion;
+			sourceTree = "<group>";
+		};
+		E5F39B0F24288E0B00646E86 = {
+			isa = PBXGroup;
+			children = (
+				E5F39B1A24288E0B00646E86 /* SpaceShooter */,
+				E5F39B3524288E0E00646E86 /* SpaceShooterTests */,
+				E5F39B4024288E0E00646E86 /* SpaceShooterUITests */,
+				E5F39B1924288E0B00646E86 /* Products */,
+				82D0D51E34EF0B0278710898 /* Pods */,
+				A8B1D9A91582B3339C7C3EEE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E5F39B1924288E0B00646E86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B1824288E0B00646E86 /* SpaceShooter.app */,
+				E5F39B3224288E0E00646E86 /* SpaceShooterTests.xctest */,
+				E5F39B3D24288E0E00646E86 /* SpaceShooterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5F39B1A24288E0B00646E86 /* SpaceShooter */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B5224288E4100646E86 /* Game */,
+				E5F39B5124288E3800646E86 /* Resources */,
+				E5F39B5024288E3300646E86 /* CoreUI */,
+				E5F39B4F24288E2F00646E86 /* Core */,
+				E5F39B2524288E0B00646E86 /* Main.storyboard */,
+				E5F39B2A24288E0E00646E86 /* LaunchScreen.storyboard */,
+				E5F39B2D24288E0E00646E86 /* Info.plist */,
+			);
+			path = SpaceShooter;
+			sourceTree = "<group>";
+		};
+		E5F39B3524288E0E00646E86 /* SpaceShooterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B3624288E0E00646E86 /* SpaceShooterTests.swift */,
+				E5F39B3824288E0E00646E86 /* Info.plist */,
+			);
+			path = SpaceShooterTests;
+			sourceTree = "<group>";
+		};
+		E5F39B4024288E0E00646E86 /* SpaceShooterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B4124288E0E00646E86 /* SpaceShooterUITests.swift */,
+				E5F39B4324288E0E00646E86 /* Info.plist */,
+			);
+			path = SpaceShooterUITests;
+			sourceTree = "<group>";
+		};
+		E5F39B4F24288E2F00646E86 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B5324288E7C00646E86 /* Structs */,
+				E5F39B1B24288E0B00646E86 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E5F39B5024288E3300646E86 /* CoreUI */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B5624288EA200646E86 /* UIColor.extension.swift */,
+			);
+			path = CoreUI;
+			sourceTree = "<group>";
+		};
+		E5F39B5124288E3800646E86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B2824288E0E00646E86 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5F39B5224288E4100646E86 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				E528299E24288F8D00E9BB37 /* Title */,
+				E528299D24288F8900E9BB37 /* Effects */,
+				E5F39B1D24288E0B00646E86 /* GameScene.sks */,
+				E5F39B1F24288E0B00646E86 /* Actions.sks */,
+				E5F39B2124288E0B00646E86 /* GameScene.swift */,
+				E5F39B2324288E0B00646E86 /* GameViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		E5F39B5324288E7C00646E86 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				E5F39B5424288E8D00646E86 /* PhysicsCategory.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5F39B1724288E0B00646E86 /* SpaceShooter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5F39B4624288E0E00646E86 /* Build configuration list for PBXNativeTarget "SpaceShooter" */;
+			buildPhases = (
+				190FFB4A8096288AFF843FA1 /* [CP] Check Pods Manifest.lock */,
+				E5F39B1424288E0B00646E86 /* Sources */,
+				E5F39B1524288E0B00646E86 /* Frameworks */,
+				E5F39B1624288E0B00646E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceShooter;
+			productName = SpaceShooter;
+			productReference = E5F39B1824288E0B00646E86 /* SpaceShooter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5F39B3124288E0E00646E86 /* SpaceShooterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5F39B4924288E0E00646E86 /* Build configuration list for PBXNativeTarget "SpaceShooterTests" */;
+			buildPhases = (
+				5F11FFA9C1D650269F73335F /* [CP] Check Pods Manifest.lock */,
+				E5F39B2E24288E0E00646E86 /* Sources */,
+				E5F39B2F24288E0E00646E86 /* Frameworks */,
+				E5F39B3024288E0E00646E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5F39B3424288E0E00646E86 /* PBXTargetDependency */,
+			);
+			name = SpaceShooterTests;
+			productName = SpaceShooterTests;
+			productReference = E5F39B3224288E0E00646E86 /* SpaceShooterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5F39B3C24288E0E00646E86 /* SpaceShooterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5F39B4C24288E0E00646E86 /* Build configuration list for PBXNativeTarget "SpaceShooterUITests" */;
+			buildPhases = (
+				CD524BE3E56F8AA9A2DEA8AA /* [CP] Check Pods Manifest.lock */,
+				E5F39B3924288E0E00646E86 /* Sources */,
+				E5F39B3A24288E0E00646E86 /* Frameworks */,
+				E5F39B3B24288E0E00646E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5F39B3F24288E0E00646E86 /* PBXTargetDependency */,
+			);
+			name = SpaceShooterUITests;
+			productName = SpaceShooterUITests;
+			productReference = E5F39B3D24288E0E00646E86 /* SpaceShooterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5F39B1024288E0B00646E86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "David Penagos";
+				TargetAttributes = {
+					E5F39B1724288E0B00646E86 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E5F39B3124288E0E00646E86 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E5F39B1724288E0B00646E86;
+					};
+					E5F39B3C24288E0E00646E86 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E5F39B1724288E0B00646E86;
+					};
+				};
+			};
+			buildConfigurationList = E5F39B1324288E0B00646E86 /* Build configuration list for PBXProject "SpaceShooter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5F39B0F24288E0B00646E86;
+			productRefGroup = E5F39B1924288E0B00646E86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5F39B1724288E0B00646E86 /* SpaceShooter */,
+				E5F39B3124288E0E00646E86 /* SpaceShooterTests */,
+				E5F39B3C24288E0E00646E86 /* SpaceShooterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5F39B1624288E0B00646E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F39B2724288E0B00646E86 /* Main.storyboard in Resources */,
+				E5F39B1E24288E0B00646E86 /* GameScene.sks in Resources */,
+				E5F39B2924288E0E00646E86 /* Assets.xcassets in Resources */,
+				E5F39B2C24288E0E00646E86 /* LaunchScreen.storyboard in Resources */,
+				E52829AA2428903C00E9BB37 /* Assets.xcassets in Resources */,
+				E52829AB2428903C00E9BB37 /* ParticleSpark.sks in Resources */,
+				E5F39B2024288E0B00646E86 /* Actions.sks in Resources */,
+				E52829A024288FA600E9BB37 /* TitleScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F39B3024288E0E00646E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F39B3B24288E0E00646E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		190FFB4A8096288AFF843FA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceShooter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F11FFA9C1D650269F73335F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceShooterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD524BE3E56F8AA9A2DEA8AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceShooter-SpaceShooterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5F39B1424288E0B00646E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F39B5724288EA200646E86 /* UIColor.extension.swift in Sources */,
+				E5F39B2224288E0B00646E86 /* GameScene.swift in Sources */,
+				E5F39B5524288E8D00646E86 /* PhysicsCategory.swift in Sources */,
+				E5F39B2424288E0B00646E86 /* GameViewController.swift in Sources */,
+				E5F39B1C24288E0B00646E86 /* AppDelegate.swift in Sources */,
+				E52829A224288FAE00E9BB37 /* TitleScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F39B2E24288E0E00646E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F39B3724288E0E00646E86 /* SpaceShooterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F39B3924288E0E00646E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F39B4224288E0E00646E86 /* SpaceShooterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5F39B3424288E0E00646E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5F39B1724288E0B00646E86 /* SpaceShooter */;
+			targetProxy = E5F39B3324288E0E00646E86 /* PBXContainerItemProxy */;
+		};
+		E5F39B3F24288E0E00646E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5F39B1724288E0B00646E86 /* SpaceShooter */;
+			targetProxy = E5F39B3E24288E0E00646E86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5F39B2524288E0B00646E86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5F39B2624288E0B00646E86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5F39B2A24288E0E00646E86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5F39B2B24288E0E00646E86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5F39B4424288E0E00646E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5F39B4524288E0E00646E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5F39B4724288E0E00646E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E79EEF5D0B9247EEFB6FC6F9 /* Pods-SpaceShooter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378R4Z3LX3;
+				INFOPLIST_FILE = SpaceShooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidpenagos.SpaceShooter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E5F39B4824288E0E00646E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ADA1521576BBA011F934FA /* Pods-SpaceShooter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378R4Z3LX3;
+				INFOPLIST_FILE = SpaceShooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidpenagos.SpaceShooter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E5F39B4A24288E0E00646E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05B361A3A914B4E48A5E690 /* Pods-SpaceShooterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378R4Z3LX3;
+				INFOPLIST_FILE = SpaceShooterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidpenagos.SpaceShooterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceShooter.app/SpaceShooter";
+			};
+			name = Debug;
+		};
+		E5F39B4B24288E0E00646E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00281D56B4AC39903DE4413C /* Pods-SpaceShooterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378R4Z3LX3;
+				INFOPLIST_FILE = SpaceShooterTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidpenagos.SpaceShooterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceShooter.app/SpaceShooter";
+			};
+			name = Release;
+		};
+		E5F39B4D24288E0E00646E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90601B064F73824BE7220D9 /* Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378R4Z3LX3;
+				INFOPLIST_FILE = SpaceShooterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidpenagos.SpaceShooterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceShooter;
+			};
+			name = Debug;
+		};
+		E5F39B4E24288E0E00646E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB2E264C00FAD2FB57913C7 /* Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 378R4Z3LX3;
+				INFOPLIST_FILE = SpaceShooterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = davidpenagos.SpaceShooterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpaceShooter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5F39B1324288E0B00646E86 /* Build configuration list for PBXProject "SpaceShooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F39B4424288E0E00646E86 /* Debug */,
+				E5F39B4524288E0E00646E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5F39B4624288E0E00646E86 /* Build configuration list for PBXNativeTarget "SpaceShooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F39B4724288E0E00646E86 /* Debug */,
+				E5F39B4824288E0E00646E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5F39B4924288E0E00646E86 /* Build configuration list for PBXNativeTarget "SpaceShooterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F39B4A24288E0E00646E86 /* Debug */,
+				E5F39B4B24288E0E00646E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5F39B4C24288E0E00646E86 /* Build configuration list for PBXNativeTarget "SpaceShooterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F39B4D24288E0E00646E86 /* Debug */,
+				E5F39B4E24288E0E00646E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5F39B1024288E0B00646E86 /* Project object */;
+}
