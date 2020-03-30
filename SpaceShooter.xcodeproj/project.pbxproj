@@ -10,10 +10,10 @@
 		290F403FDB9A5FCE323B0235 /* Pods_SpaceShooter_SpaceShooterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B133A02ED4E2B3BD7A80B6 /* Pods_SpaceShooter_SpaceShooterUITests.framework */; };
 		8082B37EFE831819561F92A9 /* Pods_SpaceShooter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEDCC97D6CDEE8EB73FB8B5 /* Pods_SpaceShooter.framework */; };
 		88FCB1FFAB6421786E055718 /* Pods_SpaceShooterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CC4A6FA50042972EE1D187 /* Pods_SpaceShooterTests.framework */; };
+		E5131CB42431C040000A9096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5131CB22431C040000A9096 /* Assets.xcassets */; };
+		E5131CB52431C040000A9096 /* ParticleSpark.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5131CB32431C040000A9096 /* ParticleSpark.sks */; };
 		E52829A024288FA600E9BB37 /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E528299F24288FA600E9BB37 /* TitleScene.sks */; };
 		E52829A224288FAE00E9BB37 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52829A124288FAE00E9BB37 /* TitleScene.swift */; };
-		E52829AA2428903C00E9BB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52829A82428903C00E9BB37 /* Assets.xcassets */; };
-		E52829AB2428903C00E9BB37 /* ParticleSpark.sks in Resources */ = {isa = PBXBuildFile; fileRef = E52829A92428903C00E9BB37 /* ParticleSpark.sks */; };
 		E5F39B1C24288E0B00646E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F39B1B24288E0B00646E86 /* AppDelegate.swift */; };
 		E5F39B1E24288E0B00646E86 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5F39B1D24288E0B00646E86 /* GameScene.sks */; };
 		E5F39B2024288E0B00646E86 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5F39B1F24288E0B00646E86 /* Actions.sks */; };
@@ -53,10 +53,10 @@
 		A3CC4A6FA50042972EE1D187 /* Pods_SpaceShooterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceShooterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB2E264C00FAD2FB57913C7 /* Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig"; path = "Target Support Files/Pods-SpaceShooter-SpaceShooterUITests/Pods-SpaceShooter-SpaceShooterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D90601B064F73824BE7220D9 /* Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceShooter-SpaceShooterUITests/Pods-SpaceShooter-SpaceShooterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5131CB22431C040000A9096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SpaceShooter/Game/Explotion/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		E5131CB32431C040000A9096 /* ParticleSpark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = ParticleSpark.sks; path = SpaceShooter/Game/Explotion/ParticleSpark.sks; sourceTree = SOURCE_ROOT; };
 		E528299F24288FA600E9BB37 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
 		E52829A124288FAE00E9BB37 /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
-		E52829A82428903C00E9BB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../spriteKit-for-dummies/spriteKit-for-dummies/Game/Effects/Explotion/Assets.xcassets"; sourceTree = "<group>"; };
-		E52829A92428903C00E9BB37 /* ParticleSpark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = ParticleSpark.sks; path = "../../../../../spriteKit-for-dummies/spriteKit-for-dummies/Game/Effects/Explotion/ParticleSpark.sks"; sourceTree = "<group>"; };
 		E5F39B1824288E0B00646E86 /* SpaceShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F39B1B24288E0B00646E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F39B1D24288E0B00646E86 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 		E52829A324288FC400E9BB37 /* Explotion */ = {
 			isa = PBXGroup;
 			children = (
-				E52829A82428903C00E9BB37 /* Assets.xcassets */,
-				E52829A92428903C00E9BB37 /* ParticleSpark.sks */,
+				E5131CB22431C040000A9096 /* Assets.xcassets */,
+				E5131CB32431C040000A9096 /* ParticleSpark.sks */,
 			);
 			path = Explotion;
 			sourceTree = "<group>";
@@ -367,8 +367,8 @@
 				E5F39B1E24288E0B00646E86 /* GameScene.sks in Resources */,
 				E5F39B2924288E0E00646E86 /* Assets.xcassets in Resources */,
 				E5F39B2C24288E0E00646E86 /* LaunchScreen.storyboard in Resources */,
-				E52829AA2428903C00E9BB37 /* Assets.xcassets in Resources */,
-				E52829AB2428903C00E9BB37 /* ParticleSpark.sks in Resources */,
+				E5131CB42431C040000A9096 /* Assets.xcassets in Resources */,
+				E5131CB52431C040000A9096 /* ParticleSpark.sks in Resources */,
 				E5F39B2024288E0B00646E86 /* Actions.sks in Resources */,
 				E52829A024288FA600E9BB37 /* TitleScene.sks in Resources */,
 			);
